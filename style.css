@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+body{
+    background-color: rgba(242, 248, 250, 0.815);
+}
+.midtop p{
+    text-transform: uppercase;
+    color:rgba(0, 0,0, 0.3);
+    /* -webkit-text-fill-color: white; Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(250, 245, 245);
+    text-shadow: 2px 2px 20px rgba(242, 248, 250, 0.5);
+    
+}
+.top{
+    height: 50vh;
+}
+.nav{
+    display: flex;
+    justify-content: flex-start;
+}
+.item1{
+    /* border: solid 1px green; */
+    width: 31%;
+    height: 50px;
+}
+.item2{
+    /* border: solid 1px rgb(19, 79, 207); */
+    width: 62%;
+    height: 50px;
+}
+.item3{
+    /* border: solid 1px rgb(212, 146, 3); */
+    width: 20%;
+    height: 50px;
+}
+.item1 img{
+    height: 35px;
+    position: absolute;
+    top: 18px;
+    left: 32px;
+    width: 184px;
+
+}
+.item2 input{
+    width: 75%;
+    height: 41%;
+    position: relative;
+    top: 25px;
+    left: 63px;
+    font-family: sans-serif;
+    border: none;
+    background: rgba(0, 0,0, 0.3);
+    border-bottom: 2px solid white;
+    padding: 0px 1em;
+}
+.item2 text{
+    padding: 2em;
+}
+
+.item3 img{
+    position: relative;
+    left: 4px;
+    width: 5em;
+    height: 2em;
+    padding: 13px 70px;
+}
+header::before{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 0;
+width: 100%;
+height: 38rem;
+z-index: -1;
+
+}
+.midtop{
+    font-family: 'Poppins', sans-serif;
+    
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 1em;
+}
+.midtop button{
+    width: 18em;
+    font-size: 1rem;
+    height: 4em;
+    background-color: rgb(243, 49, 201);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 7px;
+    pointer-events: visibleStroke;
+    cursor: pointer;
+}
+.midpart1{
+font-size: 20px;
+height: 25px;
+margin-bottom: 10px;
+
+}
+.midpart1 h2{
+    margin: 9rem 3rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 20px 20px;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+.midpart2{
+    font-size: 20px;
+    height: 25px;
+    margin-bottom: 10px;
+    }
+    .midpart2 h2{
+        margin: 2rem 3rem;
+    }
+    .container2{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        margin-top: 20px 20px;
+        font-family: sans-serif;
+        font-size: 1rem;
+    }
+    .two{
+        margin-top: 1rem;
+    }
+.foot{
+    width: auto;
+    color: white;
+    height: 15rem;
+    background-color: rgb(53, 45, 53);
+    margin-top: 4rem;
+    box-sizing: border-box;
+    
+}
+.fimg{
+    padding: 5rem 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+.last{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 22px;
+}
