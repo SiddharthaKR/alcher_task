@@ -1,5 +1,6 @@
 const imgUrl = "https://image.tmdb.org/t/p/w200"
 const url ="https://api.themoviedb.org/3/search/movie?api_key=396f7abead7b7b21aaeabbfc5a6f1929&language=en-US"
+const pageUrl ="https://www.themoviedb.org/search?query=avengers"
 const api_key= "396f7abead7b7b21aaeabbfc5a6f1929";
 
 const inputElement= document.querySelector("#inputValue");
@@ -13,6 +14,7 @@ buttonElement.onclick = function(event){
 
    
     const newUrl = url+ "&query=" +value; 
+    const newPageUrl= pageUrl+ "&query=" +value;
 
 fetch(newUrl)
 .then((res) => res.json())
@@ -27,6 +29,7 @@ for(var i=0;i<arr.length;i++){
     let title= data.results[i].original_title;
     let backDropPath = data.results[i].backdrop_path 
     let newImgUrl = imgUrl+backDropPath;
+    document.getElementsByTagName("a")[i].setAttribute("href",newPageUrl)
     names[i].innerHTML= title+"<br>"+"Rating:"+rating;
     arr[i].setAttribute("src",newImgUrl);
 
@@ -38,12 +41,5 @@ for(var i=0;i<arr.length;i++){
 console.log("name= "+ value);
 }
 
-//  var x = document.querySelectorAll(".image").src;
-//  let x = getElementsByClassName("image").innerHTML
- // for(var i=0;i<=x.length;i++){
-//      const backDropPath = data.results[0].backdrop_path 
 
-// const newImgUrl = imgUrl+backDropPath;
-//      x[0]= newImgUrl;
- 
  

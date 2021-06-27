@@ -225,3 +225,14 @@ margin-bottom: 10px;
 		opacity: 0;
 	}
 }
+.hover12 figure {
+	background: #0e0f0f;
+}
+.hover12 figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover12 figure:hover img {
+	opacity: .5;
+}
