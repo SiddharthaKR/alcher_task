@@ -15,6 +15,17 @@ body{
     text-shadow: 2px 2px 20px rgba(242, 248, 250, 0.5);
     
 }
+
+  
+#search:hover {
+    background-color: #0a2a94;
+    color: white;
+    
+  }
+#inputValue{
+    color: white;
+    box-shadow: none;
+}
 .top{
     height: 50vh;
 }
@@ -23,17 +34,17 @@ body{
     justify-content: flex-start;
 }
 .item1{
-    /* border: solid 1px green; */
+    
     width: 31%;
     height: 50px;
 }
 .item2{
-    /* border: solid 1px rgb(19, 79, 207); */
+   
     width: 62%;
     height: 50px;
 }
 .item3{
-    /* border: solid 1px rgb(212, 146, 3); */
+    
     width: 20%;
     height: 50px;
 }
@@ -56,7 +67,16 @@ body{
     background: rgba(0, 0,0, 0.3);
     border-bottom: 2px solid white;
     padding: 0px 1em;
+    box-shadow: none;
+    -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
 }
+}
+input[type=text]:focus {
+    border: none
+
+  }
 .item2 text{
     padding: 2em;
 }
@@ -156,4 +176,52 @@ margin-bottom: 10px;
     text-align: center;
     font-family: sans-serif;
     font-size: 22px;
+}
+.hover15 figure {
+	position: relative;
+}
+.hover15 figure::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	background: rgba(255,255,255,.2);
+	border-radius: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+.hover15 figure:hover::before {
+	-webkit-animation: circle .75s;
+	animation: circle .75s;
+}
+@-webkit-keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+@keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
 }

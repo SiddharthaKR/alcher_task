@@ -10,11 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
     <link rel="stylesheet" href="style.css">
     
 </head>
 
 <body>
+    <form>
     <header>
         <div class="nav">
             <div class="item1">
@@ -23,8 +26,8 @@
             <div class="item2">
 
 
-                <input type="text" name="search_movie" placeholder="Search movie here">
-
+                <input type="text" id="inputValue" placeholder="Search For Movies" name="search_movie" >
+               
             </div>
             <div class="item3">
                 <img src="profile.svg" alt="">
@@ -33,44 +36,45 @@
         <section class="midtop">
             <p>Stream All The Popular</p>
             <p>Movies On The Go</p>
-            <button>Get Started</button>
+            <button  id="search">Get Started</button>
         </section>
     </header>
+</form>
     <section class="midpart1">
         <h2>Blockbuster hits</h2>
     </section>
-    <!-- <img src="https://source.unsplash.com/1600x900/?nature,water" alt=""><img src="https://source.unsplash.com/user/erondu/300x300" alt=""><img src="https://source.unsplash.com/user/erondu/300x300" alt=""><img src="https://source.unsplash.com/user/erondu/300x300" alt=""> -->
-    <div class="container">
+
+    <div class="container hover15 column">
         <article>
-            <img src="https://source.unsplash.com/200x200/?movie,superman,ironman" alt=""><br> movie name
+          <figure>  <img class="image" src="1.jpg" width="200" height="200"></figure><br> <span class="title">Troy</span>
         </article>
         <article>
-            <img src="https://source.unsplash.com/200x200/?film,superman,spiderman" alt=""><br> movie name
+            <figure> <img class="image" src="2.jpg" width="200" height="200"></figure><br><span class="title">Dumbo</span>
         </article>
         <article>
-            <img src="https://source.unsplash.com/200x200/?film,superman,loki" alt=""><br> movie name
+            <figure> <img class="image" src="3.jpg" width="200" height="200"></figure><br><span class="title">Avengers Endgame</span> 
         </article>
         <article>
-            <img src="https://source.unsplash.com/200x200/?film,superman,thor" alt=""><br> movie name
+            <figure><img class="image" src="4.jpg" width="200" height="200"></figure><br><span class="title">300</span> 
         </article>
     </div>
     <div class="two">
         <section class="midpart2">
             <h2>Blockbuster hits</h2>
-        </section>
-        <!-- <img src="https://source.unsplash.com/1600x900/?nature,water" alt=""><img src="https://source.unsplash.com/user/erondu/300x300" alt=""><img src="https://source.unsplash.com/user/erondu/300x300" alt=""><img src="https://source.unsplash.com/user/erondu/300x300" alt=""> -->
-        <div class="container2">
+        </section >
+        
+        <div class="container2 hover15 column">
             <article>
-                <img src="https://source.unsplash.com/200x200/?movie,superman,ironman,loki" alt=""><br> movie name
+                <figure>  <img class="image" src="5.jpg" width="200" height="200"></figure><br> <span class="title">Schokwave </span>
             </article>
             <article>
-                <img src="https://source.unsplash.com/200x200/?film,superman,spiderman,batman" alt=""><br> movie name
+                <figure> <img class="image" src="6.jpg" width="200" height="200"></figure><br>  <span class="title">Godzila </span>
             </article>
             <article>
-                <img src="https://source.unsplash.com/200x200/?movie,superman,batman,loki" alt=""><br> movie name
+                <figure>  <img class="image" src="7.jpg" width="200" height="200"></figure><br>  <span class="title"> Dracula</span>
             </article>
             <article>
-                <img src="https://source.unsplash.com/200x200/?movie,superman,batman,thor" alt=""><br> movie name
+                <figure>   <img class="image" src="8.jpg" width="200" height="200"></figure><br>  <span class="title">Avatar </span>
             </article>
         </div>
     </div>
@@ -82,6 +86,7 @@
             <span>&#169</span>2021 AlcherStream
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
